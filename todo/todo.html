@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="logo_Todo.png">
+  <title>TODO LIST</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="logo_Todo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Bootstrap
+    </a>
+  </nav>
+  <div class="container-1">
+    <div class="form-group">
+      <label for="task">Title</label>
+      <input type="text" class="form-control" id="title" aria-describedby="Task" placeholder="Enter Task">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Description</label>
+      <input type="textarea" class="form-control" id="description" placeholder="Description">
+    </div>
+
+    <button type="submit" id="fill" class="btn btn-primary">Submit</button>
+    <button class="btn btn-danger" id="reset">RESET</button>
+  </div>
+  <div class="container-2">
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th scope="col">S.No.</th>
+          <th scope="col">TASK</th>
+          <th scope="col">DESCRIPTION</th>
+          <th scope="col">DELETE</th>
+        </tr>
+      </thead>
+      <tbody id="table">
+
+      </tbody>
+    </table>
+  </div>
+  <script src="todolist.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
